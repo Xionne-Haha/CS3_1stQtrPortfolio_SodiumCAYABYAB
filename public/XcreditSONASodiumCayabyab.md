@@ -22,3 +22,5 @@
 
 # **What one word or phrase do you have for the Philippines after hearing SONA 2025**
 ## Sobrang mahaba.
+
+![SONA 2025](Screenshot 2025-08-03 122008)
