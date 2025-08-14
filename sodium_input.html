@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+<head>
+
+    <title>
+        This is the webpage's name on the tab
+    </title>
+
+</head>
+<!--under the div is content, input, and button -->
+
+<div>How old are you? <input> </div>
+<button id="submit_button">Submit your age</button>
+
+<script type="text/javascript">
+const btn = document.getElementById("btn_submit");
+const age = document.getElementById("inp_age");
+alert(btn.innerText);
+btn.addEventListener('click', btn_clicked);
+function btn_clicked (){
+    alert(age.value);
+    alert("You are " + (65-age.value) + " years from retirement.");
+    document.write("You are " + (65-age.value) + " years from retirement.");
+    console.log("You are " + (65-age.value) + " years from retirement.");
+}
+</script>
+
+    </body>
+</html>
