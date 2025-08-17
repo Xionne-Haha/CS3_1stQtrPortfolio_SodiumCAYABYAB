@@ -5,11 +5,12 @@
     <h2> Q1 3rd Graded Exercise submitted by Audrey Cayabyab of 9Sodium</h2>
 
     <!-- Enter your tags below until the script tag -->
+     <!--W3Schools.com. (n.d.). https://www.w3schools.com/js/js_input_examples.asp-->
     
   <div>
     Meal price: <input id= "mealPriceInput" placeholder= "Input meal price here"> <br> <br>
       Tip: <input id= "tipInput" placeholder= "Input tip here"> <br> <br>
-      Service charge <input id= "serviceChargeInput" placeholder= "Input service charge here"> <br> <br>
+      Service charge: <input id= "serviceChargeInput" placeholder= "Input service charge here"> <br> <br>
 
       <button type = "button" onclick="totalMeal()">Accept Input</button>
       <br> <br>
@@ -20,16 +21,17 @@
 
     <script>
 
-     let serviceCharge;
-     let mealPrice;
-     let tipInput;
-
   
   function totalMeal() {
 
+    
+     let serviceCharge = document.getElementById("serviceChargeInput");
+     let mealPrice =  document.getElementById("mealPriceInput");
+     let tipInput =  document.getElementById("tipInput");
              
              let totalCost = mealPrice + tip + (serviceCharge/100*mealPrice);
             
+            console.log(totalCost);
          
         }
               
