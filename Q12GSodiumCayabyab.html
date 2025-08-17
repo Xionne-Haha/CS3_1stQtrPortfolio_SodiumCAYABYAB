@@ -2,27 +2,32 @@
 <html>
 <body>
 
-    <h2> Q1 3rd Graded Exercise submitted by name of section</h2>
+    <h2> Q1 3rd Graded Exercise submitted by Audrey Cayabyab of 9Sodium</h2>
 
     <!-- Enter your tags below until the script tag -->
     
   <div>
-    <input id= "mealPriceInput" placeholder= "Input your meal price here"> 
-       <input id= "tipInput" placeholder= "Input your tip here"> 
-       <input id= "serviceChargeInput" placeholder= "Input your service charge here"> 
+    Meal price: <input id= "mealPriceInput" placeholder= "Input meal price here"> <br> <br>
+      Tip: <input id= "tipInput" placeholder= "Input tip here"> <br> <br>
+      Service charge <input id= "serviceChargeInput" placeholder= "Input service charge here"> <br> <br>
+
+      <button type = "button" onclick="totalMeal()">Accept Input</button>
+      <br> <br>
+      Total Meal:
+      
   </div>
 
 
     <script>
+  
+  function totalMeal() {
 
-        let mealPrice;
-        let tip;
-        let serviceCharge;
+     let mealPrice;
+     let tip;
+     let serviceCharge;
 
-        console.log("Meal Price:")
-       
-       function totalMeal() {
-              // place your JS code here
+              var totalCost = mealPrice + tip + (serviceCharge/100*mp);
+              console.log(totalCost);
             
          
         }
