@@ -16,21 +16,25 @@
     <script>
 
        var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
+       let numberEntered = document.getElementById("enterNumber");
 
-        function checkIt(enterNumber) {
-              
-          let numberEntered = document.getElementById("enterNumber");
-          let dNumber = ocument.getElementById("dNumber");
+        function checkIt(enterNumber, dNumber) {      
 
-          if(numberEntered>dNumber){
-            console.log("lower")
+          if(numberEntered > dNumber){
+            document.write("lower");
           }
 
-          else if (numberEntered<dNumber){
-            console.log("higher")
+          else if (numberEntered < dNumber){
+            document.write("higher");
           }
          
+          else{
+            document.write("You got it correct");
+          }
+
+         return(numberEntered,dNumber);
         }
+
     </script>
 
 </body>
