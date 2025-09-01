@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>Q1 3rd Graded Exercise submitted by Audrey Cayabyab of 9Sodium</h2>
+
+  <div>
+    Meal price: <input id="mealPriceInput" placeholder="Input meal price here"> <br><br>
+    Tip: <input id="tipInput" placeholder="Input tip here"> <br><br>
+    Service charge (%): <input id="serviceChargeInput" placeholder="Input service charge here"> <br><br>
+
+    <button type="button" onclick="totalMeal()">Accept Input</button>
+    <br><br>
+    <p id="totalmeal">Total Meal: </p>
+  </div>
+
+  <script>
+    function totalMeal() {
+      // Get input values
+      let mp = document.getElementById("mealPriceInput").value;
+      let tip = document.getElementById("tipInput").value;
+      let sc = document.getElementById("serviceChargeInput").value;
+
+      // Apply formula: totalCost = mp + tip + (%sc / 100 * mp)
+      let totalCost = mp + tip + (sc / 100 * mp);
+
+      // Display result with two decimal places
+      document.getElementById("totalmeal").innerText = "Total Meal: ₱" + totalCost.toFixed(2);
+    }
+  </script>
+
+</body>
+</html>
