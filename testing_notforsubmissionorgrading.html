@@ -16,15 +16,13 @@
 
   <script>
     function totalMeal() {
-      // Get input values
       let mp = document.getElementById("mealPriceInput").value;
       let tip = document.getElementById("tipInput").value;
       let sc = document.getElementById("serviceChargeInput").value;
 
-      // Apply formula: totalCost = mp + tip + (%sc / 100 * mp)
-      let totalCost = mp + tip + (sc / 100 * mp);
+      // Convert to numbers only during calculation
+      let totalCost = (+mp) + (+tip) + ((+sc / 100) * (+mp));
 
-      // Display result with two decimal places
       document.getElementById("totalmeal").innerText = "Total Meal: ₱" + totalCost.toFixed(2);
     }
   </script>
