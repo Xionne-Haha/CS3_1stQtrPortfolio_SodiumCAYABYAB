@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+</head>
+<body>
+
+    <h2>Q1 3rd Graded Exercise submitted by Audrey Cayabyab of 9-Sodium</h2>
+
+    <div>
+        <strong>Guess the number *****</strong><br><br>
+        The number is from 1 to 100<br><br>
+
+        Enter your guess: <input type="number" id="enterNumber"><br><br>
+
+        <button type="button" onclick="checkIt()">Check it</button>
+
+        <p id="result">Result:</p>
+    </div>
+
+    <script>
+        // Generate a random number between 1 and 100
+        const dNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkIt() {
+            // Get the value directly from the input field
+            let numberEntered = document.getElementById("enterNumber").value;
+
+            // JavaScript will automatically coerce the string to a number during comparison
+            if (numberEntered > dNumber) {
+                document.getElementById("result").innerText = "Result: lower";
+            } else if (numberEntered < dNumber) {
+                document.getElementById("result").innerText = "Result: higher";
+            } else {
+                // Show the correct number with two decimal places
+                document.getElementById("result").innerText = 
+                    "Result: correct! The number was " + dNumber.toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+</html>
