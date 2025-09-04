@@ -21,7 +21,7 @@
       let sc = document.getElementById("serviceChargeInput").value;
 
       // Convert to numbers only during calculation
-      let totalCost = (+mp) + (+tip) + ((+sc / 100) * (+mp));
+      let totalCost = (+mp) + (+tip) + ((+sc) / (100) * (+mp));
 
       document.getElementById("totalmeal").innerText = "Total Meal: ₱" + totalCost.toFixed(2);
     }
