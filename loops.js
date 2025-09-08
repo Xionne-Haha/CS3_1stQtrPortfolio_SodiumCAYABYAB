@@ -38,3 +38,6 @@ console.log("For the even number for loop")
 for (let i = 2; i<=6; i = i +2){
     console.log(i)
 }
+
+
+// 3 ways to do for loop
