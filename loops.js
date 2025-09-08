@@ -48,6 +48,8 @@ for(let i = 0; i<grades.length; i++){
 
 // grades.length is the length of the array
 
-for(var grade of grade){
+for(var grade of grades){
     console.log(grade)
 }
+// the one above
+// for every grade in grades it is outputted
