@@ -1,5 +1,5 @@
 console.log("For the for loop")
-for (let i = 1; i<=12; i++){
+for (let i = 1; i<=7; i++){
     console.log(i)
 }
 
