@@ -41,3 +41,13 @@ for (let i = 2; i<=6; i = i +2){
 
 
 // 3 ways to do for loop
+grades = [75, 98, 99, 100]
+for(let i = 0; i<grades.length; i++){
+    console.log(grades[i])
+}
+
+// grades.length is the length of the array
+
+for(var grade of grade){
+    console.log(grade)
+}
