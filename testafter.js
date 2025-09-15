@@ -17,7 +17,7 @@ function get_line(age){
         console.log("You can watch movies with ratings: G, PG, and R-13.")
         
     }
-    else if(16 <= age < 18){
+    else if(16 < age <= 18){
         console.log("You can watch movies with ratings: G, PG, R-13, and R-16.")
         
     }
