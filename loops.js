@@ -2,7 +2,7 @@ console.log("For the for loop")
 
 let num = 20;
 for (let i = 0; i<num; i++){
-    console.log(num)
+    console.log(i)
 }
 
 // this is the start: let i = 1;
