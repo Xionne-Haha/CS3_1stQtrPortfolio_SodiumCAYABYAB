@@ -1,6 +1,8 @@
 console.log("For the for loop")
-for (let i = 10; i>7; i-=1){
-    console.log(i)
+
+let num = 20;
+for (let i = 0; i<num; i++){
+    console.log(num)
 }
 
 // this is the start: let i = 1;
