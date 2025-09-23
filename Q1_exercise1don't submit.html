@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div>
+              Enter your current age <input type ="number" id="age"> <br>
+                Enter your maximum age <input type = "number" id="maxAge">  <br>
+                Enter your snack <input id = "snack"> <br>
+                Enter the amount of snack you eat per day <input type = "number" id= "numPerDay"> <br>
+
+        <button type = "button" onclick = "snackandAge()"> Press here</button>
+        <p id="output"></p>
+        </div>
+       
+       
+       
+       <script>
+
+        function snackandAge() {
+
+let age = document.getElementById("age").value;
+let maxAge = document.getElementById("maxAge").value;;
+let numPerDay =  document.getElementById("numPerDay").value;
+let snack = document.getElementById("snack").value;
+
+let totalRequired = (numPerDay*365)*(maxAge-age);
+
+
+document.getElementById("output").innerText = "You will need" + " " + totalRequired + " " + snack + "s" + " " + "to last until" + " " + maxAge;}
+
+
+        </script>
+
+    </body>
+</html>
